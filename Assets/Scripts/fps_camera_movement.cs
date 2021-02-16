@@ -10,8 +10,8 @@ public class fps_camera_movement : MonoBehaviour
 { 
     public class procedural_anims
     {
-        public static void spine_move(Transform spine,Transform main_transform,ref float x,ref float y,float sens)
-        {
+        public static void spine_move(Transform spine,Transform main_transform,ref float x,ref float y,float sens, Transform camera_pos)
+        { 
             x += Input.GetAxis("Mouse X"); 
             y += Input.GetAxis("Mouse Y");
             Vector3 look_root= new Vector3(spine.position.x,main_transform.position.y,spine.position.z+8f);
