@@ -10,7 +10,7 @@ public class fps_camera_movement : MonoBehaviour
 { 
     public class procedural_anims
     {
-        public static void spine_move(Transform spine,Transform main_transform,ref float x,ref float y,float sens, Transform camera_pos)
+        public static void spine_move(Transform spine,Transform main_transform,ref float x,ref float y,float sens)
         { 
             x += Input.GetAxis("Mouse X"); 
             y += Input.GetAxis("Mouse Y");
